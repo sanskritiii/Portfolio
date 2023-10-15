@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSS Academy of Technical Education, Noida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1affd19e03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="https://jssaten.ac.in\/assets/images/logo/jsslogoicon.png" style="width:160px; height:160px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+
+    <!------- about us conten ------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>JSS MAHAVIDYAPEETHA</h1>
+                   <p><b>The Jagadguru Veerasimhaasana Peetha was established in the 11th Century A.D. at Sutturu by Adi Jagadguru Sri Shivarathreeshwara Shivayogi Mahaswamiji. Sutturu is a village in Nanjangud taluk, Mysuru District in Karnataka. It is about 28 km from Mysuru city, in the south east direction.
+
+                    The Peetha with its high ideals has been making remarkable contribution in religious, social, educational and economic spheres in the state and across the country. It is striving for social development by responding to the community needs. It strongly believes that, unless the problems of the socially backward communities and the poor are taken care, there will not be social development. With this objective, the math has initiated several programmes, while at the same time living up to its principle of “work is worship” and is engaged in raising public awareness on issues of social concern.</b>JSSATEN in its glorious existence of over past 24 years, it has more than 18,000 students who are graduated and are contributing
+                     immensely to the industry, academia, business etc., both in India and abroad.
+                     Alumni are closely associated with the institution and visit the institution regularly.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="img/about.jpg">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--------- Footer -------->
+    <section class="footer">
+        <h4><Blockquote>HIGHLIGHT</Blockquote></h4>
+        <p>1.Highly dedicated social service-oriented management.
+            2.Rich pool of Qualified & Competent Faculty with 78 Ph.Ds. Average Experience of faculty is more than 15 years.
+            3.Good infrastructure, Well-Stocked library, laboratories, computing facility and 300 Mbps internet connectivity.
+            4.Spacious classrooms and laboratory facilities housed in three Academic blocks.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- ------------JavaScript For Toggle Menu--------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

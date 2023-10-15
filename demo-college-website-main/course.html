@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/CSS/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/1affd19e03.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="https://jssaten.ac.in\/assets/images/logo/jsslogoicon.png" style="width:160px; height:160px;"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+
+    <!------- Courses ------->
+    <section class="courses">
+        <h1>Courses We Offer</h1>
+        <p>We Offer Best Technical cources
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Research Program</h3>
+                <p>research centers in CSE, ME, IEM, ECE, EIE, CIVIL, MBA, Mathematics, Physics and
+                     Chemistry leading to the award of Ph.D. and M.S. (Engg). till date 32 Research Scholars have been awarded Ph.D.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>JSSATEB offers BE courses in 8 branches of engineering namely Civil, CSE, CSE(AI&ML),ECE, EIE,
+                     ISE,RA and Mechanical Engineering. Six disciplines are accredited from the National Board of
+                      Accreditation (NBA), New Delhi.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduation</h3>
+                <p>The college also offers 5 PG courses, namely, Master of Business Administration, M.Tech. in VLSI Design & Embedded
+                     Systems,M.Tech. in Thermal Engineering,M.Tech. in Data Science & MCA.
+            </div>
+        </div>
+    </section>
+
+    <!-------- Facilities -------->
+
+    section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>OUR FUTURE OF EXCELLENCE BEGINS HERE
+
+            OUR COMMITMENT TO QUALITY AND EXCELLENCE MEANS THAT WE ONLY HAVE TRAINED STAFF FOR INNOVATIVE TEACHING AND REALTIME LEARNING PROCESS
+        </p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="img/library.jpg">
+                <h3>World Class Library</h3>
+                <p>The Library and Information Centre is fully automated with RFID enabled circulation system and spread over 1260 square meter with air-conditioned space. It has a seating capacity of over 350 students in the Reference Section. The Library has good collection of books, journals, reports and dissertation. Library is subscribing 127 printed journals/magazines. In addition, it has ten online full text databases of Science Direct, Springer, EBSCO, Emerald, Pearson, Cambridge Core, Wiley, Taylor & Francis, New Age International, Sage Publication e-books & e-journals under Dr. APJ AKTU Nalanda e-consortium, which contains more than 2675+ International e-journals and 19386 e-Books, more than 1000+ company profiles and business publication are provided for the benefit of the faculty and research community. E-resources can be accessed within the campus or outside campus through My-Loft application.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/basketball.jpg">
+                <h3>Sports</h3>
+                <p>Department of Physical Education aims at all-round development of the student’s personality through sports activities. Presently department has 2 staff members. It has required infrastructure to enhance the sports activities like cricket, basketball, volleyball, football, athletics, Badminton, Table Tennis, Carom and Chess. The sports department actively organises Inter department sports activities & Annual Sports meet annually. It takes pride in successfully organizing Dr. A.P.J AKTU Zonal Level Sports Fest as per AKTU guidelines. State of art sports facilities are provided that make the department in hosting selection, training and practice sessions for college teams. Sports events for faculty at college & inter collegiate level are also organized.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="img/Canteen.jpg">
+                <h3>Tasty and Healthy Food</h3>
+                <p> The cafeteria is not just a food joint but a place to relax, interact, rejuvenate and take a refuge from the daily hectic schedule. The college canteen is designed to cater to 300 plus students & staff, it is spread over 760 square meters. It has a modern kitchen where food is steam cooked. In the canteen, a vast array of fresh, hot and quality vegetarian food items is being served, which include both south Indian and north Indian meals. For breakfast, variety of parathas, dosas, idly-sambar, uttappam, Chloe bhatura Poori-sabji samosas, bread and curry, colas, chips, milk shakes, cold-coffee, ice-cream, chocolates, patties, etc., are the most commonly prepared dishes on all the working days. Seasonal fresh fruit juices also prepared during summer.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--------- Footer -------->
+    <section class="footer">
+        <h4>VISION</h4>
+        <p>
+            Vision
+            To become an Institution of excellence in imparting quality Outcome Based Education that empowers the young generation with Knowledge, Skills, Research, Aptitude and Ethical values to solve Contemporary Challenging Problems.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+
+    <!-- ------------JavaScript For Toggle Menu--------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
